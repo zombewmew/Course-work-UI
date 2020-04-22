@@ -10,6 +10,17 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var userPhoto: UIImageView!
+    @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var postDate: UILabel!
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var likesLink: UILabel!
+    @IBOutlet weak var likesCount: UILabel!
+    @IBOutlet weak var postDescription: UILabel!
+    
+    @IBAction func clickLike(_ sender: Any) {
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

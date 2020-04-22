@@ -11,6 +11,7 @@
 		31BC81072450C5C600F60DE0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31BC81062450C5C600F60DE0 /* Storyboard.storyboard */; };
 		31BC810A2450CA3F00F60DE0 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC81082450CA3F00F60DE0 /* FeedTableViewCell.swift */; };
 		31BC810B2450CA3F00F60DE0 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BC81092450CA3F00F60DE0 /* FeedTableViewCell.xib */; };
+		31BC810D2450CB2800F60DE0 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BC810C2450CB2800F60DE0 /* FeedTableViewController.swift */; };
 		7484B05420441FD000BDE1A6 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7484B05320441FD000BDE1A6 /* DataProvider.framework */; };
 		7484B05520441FD000BDE1A6 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7484B05320441FD000BDE1A6 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74B79258202B3254006BCB41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B79257202B3254006BCB41 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		31BC81062450C5C600F60DE0 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		31BC81082450CA3F00F60DE0 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		31BC81092450CA3F00F60DE0 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		31BC810C2450CB2800F60DE0 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		7484B05320441FD000BDE1A6 /* DataProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DataProvider.framework; sourceTree = "<group>"; };
 		74B79254202B3254006BCB41 /* Course2FinalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Course2FinalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B79257202B3254006BCB41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				74B79257202B3254006BCB41 /* AppDelegate.swift */,
 				31BC81062450C5C600F60DE0 /* Storyboard.storyboard */,
+				31BC810C2450CB2800F60DE0 /* FeedTableViewController.swift */,
 				31BC81082450CA3F00F60DE0 /* FeedTableViewCell.swift */,
 				31BC81092450CA3F00F60DE0 /* FeedTableViewCell.xib */,
 			);
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74B79258202B3254006BCB41 /* AppDelegate.swift in Sources */,
+				31BC810D2450CB2800F60DE0 /* FeedTableViewController.swift in Sources */,
 				31BC810A2450CA3F00F60DE0 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
