@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DataProvider
 
 class FeedTableViewCell: UITableViewCell {
 
@@ -17,19 +18,26 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var likesLink: UILabel!
     @IBOutlet weak var likesCount: UILabel!
     @IBOutlet weak var postDescription: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    //let postsData = DataProviders.shared.postsDataProvider.likePost(with: <#T##Post.Identifier#>)
+    var onClickCallback: (() -> Void)?
+    var goToLikesCallback: (() -> Void)?
+    
+    
+    @IBAction func showLikesList(_ sender: Any) {
+        goToLikesCallback?()
+    }
     
     @IBAction func clickLike(_ sender: Any) {
+        onClickCallback?()
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }
