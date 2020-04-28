@@ -98,12 +98,21 @@
                             <action selector="showLikesList:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9Vr-E5-mdh"/>
                         </connections>
                     </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigLike" translatesAutoresizingMaskIntoConstraints="NO" id="B8e-CL-yJO">
+                        <rect key="frame" x="107" y="158" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="RRm-dM-GhH"/>
+                            <constraint firstAttribute="width" secondItem="B8e-CL-yJO" secondAttribute="height" multiplier="1:1" id="uyR-EN-B6g"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="KCY-O4-nVn" firstAttribute="centerY" secondItem="M5R-Rj-dSU" secondAttribute="centerY" id="1ff-xd-MdS"/>
                     <constraint firstItem="XVv-cW-8ja" firstAttribute="leading" secondItem="5xz-Q3-eFd" secondAttribute="trailing" constant="8" id="4zM-J4-sWh"/>
+                    <constraint firstItem="B8e-CL-yJO" firstAttribute="centerY" secondItem="XwP-xc-kxO" secondAttribute="centerY" id="9NZ-Jl-amt"/>
                     <constraint firstAttribute="bottom" secondItem="Axd-UE-AAk" secondAttribute="bottom" constant="8" id="Crl-gf-72I"/>
                     <constraint firstItem="XVv-cW-8ja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ffb-9D-ofs"/>
+                    <constraint firstItem="B8e-CL-yJO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Gy9-HU-MGq"/>
                     <constraint firstItem="5xz-Q3-eFd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HSg-Wn-sQ5"/>
                     <constraint firstAttribute="trailing" secondItem="83Q-sQ-6uA" secondAttribute="trailing" constant="15" id="NhV-0i-NVo"/>
                     <constraint firstItem="E6X-dF-9jt" firstAttribute="leading" secondItem="KCY-O4-nVn" secondAttribute="trailing" constant="8" id="OJu-kS-haH"/>
@@ -128,6 +137,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bigLike" destination="B8e-CL-yJO" id="bQo-M0-qZQ"/>
                 <outlet property="likeButton" destination="E6X-dF-9jt" id="QRL-oK-OVg"/>
                 <outlet property="likesCount" destination="KCY-O4-nVn" id="HAt-hq-i5g"/>
                 <outlet property="likesLink" destination="M5R-Rj-dSU" id="PPO-DS-RGF"/>
@@ -141,6 +151,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="bigLike" width="100" height="100"/>
         <image name="like" width="25" height="25"/>
     </resources>
 </document>
