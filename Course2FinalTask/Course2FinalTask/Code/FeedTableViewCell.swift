@@ -31,6 +31,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBAction func clickLike(_ sender: Any) {
         onClickCallback?()
     }
+
     
     @IBOutlet weak var bigLike: UIImageView!
     
